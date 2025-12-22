@@ -1,0 +1,61 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"className":"bg-white"} -->
+<main class="wp-block-group bg-white" data-wp-router-region="main">
+    
+    <!-- Archive Header -->
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 pt-16 md:pt-24">
+        <!-- wp:query-title {"type":"archive","className":"text-4xl md:text-5xl font-black text-slate-900 mb-4"} /-->
+        <!-- wp:term-description {"className":"text-xl text-slate-500 max-w-2xl"} /-->
+    </div>
+    
+    <!-- Posts Container -->
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 py-12 md:py-16">
+        
+        <!-- wp:query {"queryId":0,"query":{"inherit":true}} -->
+        <div class="wp-block-query">
+            <!-- wp:post-template {"className":"space-y-16"} -->
+                
+                <!-- Post Item -->
+                <article class="group">
+                    <!-- Date -->
+                    <!-- wp:post-date {"format":"F j, Y","className":"text-primary font-bold text-xs uppercase tracking-[0.15em] mb-4 block"} /-->
+                    
+                    <!-- Title -->
+                    <!-- wp:post-title {"level":2,"isLink":true,"className":"text-3xl md:text-4xl font-black text-slate-900 mb-4 leading-tight group-hover:text-primary transition-colors [&_a]:no-underline [&_a]:text-inherit hover:[&_a]:text-primary"} /-->
+                    
+                    <!-- Excerpt -->
+                    <!-- wp:post-excerpt {"moreText":"","excerptLength":40,"className":"text-slate-600 text-lg leading-relaxed mb-4 [&_p]:m-0"} /-->
+                    
+                    <!-- Read More Link -->
+                    <!-- wp:read-more {"content":"Read more","className":"text-slate-900 font-semibold text-base underline underline-offset-4 decoration-1 hover:text-primary transition-colors"} /-->
+                </article>
+                
+            <!-- /wp:post-template -->
+
+            <!-- Pagination -->
+            <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"},"className":"mt-16 gap-4"} -->
+            <nav class="wp-block-query-pagination mt-16 gap-4">
+                <!-- wp:query-pagination-previous {"className":"rounded-full border border-slate-200 px-6 py-3 text-sm font-bold hover:border-primary hover:text-primary transition-all no-underline"} /-->
+                <!-- wp:query-pagination-numbers {"className":"font-semibold"} /-->
+                <!-- wp:query-pagination-next {"className":"rounded-full border border-slate-200 px-6 py-3 text-sm font-bold hover:border-primary hover:text-primary transition-all no-underline"} /-->
+            </nav>
+            <!-- /wp:query-pagination -->
+
+            <!-- No Results -->
+            <!-- wp:query-no-results -->
+            <div class="text-center py-20">
+                <!-- wp:paragraph {"className":"text-slate-400 text-lg"} -->
+                <p class="text-slate-400 text-lg">No posts found in this category.</p>
+                <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:query-no-results -->
+        </div>
+        <!-- /wp:query -->
+        
+    </div>
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

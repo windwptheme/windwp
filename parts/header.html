@@ -1,0 +1,73 @@
+<!-- wp:html -->
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<!-- /wp:html -->
+
+<!-- wp:group {"tagName":"header","align":"full","backgroundColor":"slate-950","className":"is-sticky-header","style":{"spacing":{"padding":{"top":"0px","bottom":"0px","right":"0px","left":"0px"}}},"layout":{"type":"constrained"}} -->
+<header id="windwp-header" class="wp-block-group alignfull has-slate-950-background-color has-background is-sticky-header" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px" data-wp-interactive="windwp">
+    
+    <!-- wp:group {"align":"wide","className":"is-section-container py-4","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+    <div class="wp-block-group alignwide is-section-container py-4">
+        
+        <!-- wp:group {"style":{"spacing":{"blockGap":"12px"}},"className":"no-underline group shrink-0","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+        <div class="wp-block-group no-underline group shrink-0">
+            
+            <!-- wp:site-logo {"width":40,"className":"is-logo-image"} /-->
+
+            <!-- wp:group {"backgroundColor":"primary","gradient":"primary-gradient","className":"is-logo-icon","style":{"border":{"radius":"12px"},"spacing":{"padding":{"top":"0px","bottom":"0px","left":"0px","right":"0px"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"center"}} -->
+            <div class="wp-block-group is-logo-icon has-primary-background-color has-background has-primary-gradient-background" style="border-radius:12px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
+                <!-- wp:paragraph {"placeholder":"W","textColor":"white","className":"is-logo-text"} -->
+                <p class="has-white-color has-text-color is-logo-text">W</p>
+                <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:site-title {"style":{"typography":{"lineHeight":"1"}},"className":"text-xl font-bold tracking-tight text-white"} /-->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:group {"style":{"spacing":{"blockGap":"32px"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+        <div class="wp-block-group">
+            
+            <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex"},"className":"is-desktop-only is-desktop-nav"} /-->
+
+            <!-- wp:buttons {"className":"is-desktop-only"} -->
+            <div class="wp-block-buttons is-desktop-only">
+                <!-- wp:button {"className":"is-btn-primary-sm"} -->
+                <div class="wp-block-button is-btn-primary-sm"><a class="wp-block-button__link wp-element-button" href="#">Get Started</a></div>
+                <!-- /wp:button -->
+            </div>
+            <!-- /wp:buttons -->
+
+            <!-- wp:group {"tagName":"button","className":"is-menu-toggle is-mobile-only text-white p-2 relative w-10 h-10 flex items-center justify-center focus:outline-none -mr-2"} -->
+            <button class="wp-block-group is-menu-toggle is-mobile-only text-white p-2 relative w-10 h-10 flex items-center justify-center focus:outline-none -mr-2" 
+                data-wp-on--click="actions.toggleMenu" 
+                data-wp-class--is-menu-open="state.isMenuOpen"
+                aria-label="Toggle Menu"
+                role="button"
+                tabindex="0">
+                <!-- wp:html -->
+                <div class="burger-icon">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <!-- /wp:html -->
+            </button>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"className":"is-mobile-menu is-mobile-only mobile-menu-panel","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-mobile-menu is-mobile-only mobile-menu-panel" data-wp-bind--hidden="!state.isMenuOpen" data-wp-effect="effects.toggleScroll">
+        <!-- wp:group {"className":"is-section-container py-12","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group is-section-container py-12">
+            <!-- wp:navigation {"overlayMenu":"never","orientation":"vertical","className":"is-mobile-nav"} /-->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+</header>
+<!-- /wp:group -->

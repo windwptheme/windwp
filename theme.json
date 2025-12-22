@@ -1,0 +1,272 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "appearanceTools": true,
+        "useRootPaddingAwareAlignments": true,
+        "layout": {
+            "contentSize": "800px",
+            "wideSize": "1280px"
+        },
+        "color": {
+            "gradients": [
+                {
+                    "slug": "primary-gradient",
+                    "gradient": "linear-gradient(135deg, #00D1B2 0%, #009E87 100%)",
+                    "name": "Primary Gradient"
+                },
+                {
+                    "slug": "primary-gradient-reverse",
+                    "gradient": "linear-gradient(135deg, #009E87 0%, #00D1B2 100%)",
+                    "name": "Primary Gradient Reverse"
+                }
+            ],
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "#00D1B2",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "primary-dark",
+                    "color": "#009E87",
+                    "name": "Primary dark"
+                },
+                {
+                    "slug": "primary-light",
+                    "color": "#00E6C7",
+                    "name": "Primary light"
+                },
+                {
+                    "slug": "brand-dark",
+                    "color": "#0f172a",
+                    "name": "Brand dark"
+                },
+                {
+                    "slug": "slate-50",
+                    "color": "#f8fafc",
+                    "name": "Slate 50"
+                },
+                {
+                    "slug": "slate-100",
+                    "color": "#f1f5f9",
+                    "name": "Slate 100"
+                },
+                {
+                    "slug": "slate-200",
+                    "color": "#e2e8f0",
+                    "name": "Slate 200"
+                },
+                {
+                    "slug": "slate-300",
+                    "color": "#cbd5e1",
+                    "name": "Slate 300"
+                },
+                {
+                    "slug": "slate-400",
+                    "color": "#94a3b8",
+                    "name": "Slate 400"
+                },
+                {
+                    "slug": "slate-500",
+                    "color": "#64748b",
+                    "name": "Slate 500"
+                },
+                {
+                    "slug": "slate-600",
+                    "color": "#475569",
+                    "name": "Slate 600"
+                },
+                {
+                    "slug": "slate-700",
+                    "color": "#334155",
+                    "name": "Slate 700"
+                },
+                {
+                    "slug": "slate-800",
+                    "color": "#1e293b",
+                    "name": "Slate 800"
+                },
+                {
+                    "slug": "slate-900",
+                    "color": "#0f172a",
+                    "name": "Slate 900"
+                },
+                {
+                    "slug": "slate-950",
+                    "color": "#020617",
+                    "name": "Slate 950"
+                }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Inter",
+                    "name": "Sans",
+                    "slug": "sans"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "size": "0.75rem",
+                    "slug": "xs",
+                    "name": "Extra Small"
+                },
+                {
+                    "size": "0.875rem",
+                    "slug": "small",
+                    "name": "Small"
+                },
+                {
+                    "size": "1rem",
+                    "slug": "medium",
+                    "name": "Medium"
+                },
+                {
+                    "size": "1.25rem",
+                    "slug": "large",
+                    "name": "Large"
+                },
+                {
+                    "size": "1.5rem",
+                    "slug": "x-large",
+                    "name": "X-Large"
+                },
+                {
+                    "size": "2.25rem",
+                    "slug": "2xl",
+                    "name": "2X-Large"
+                },
+                {
+                    "size": "3rem",
+                    "slug": "3xl",
+                    "name": "3X-Large"
+                }
+            ]
+        },
+        "spacing": {
+            "units": [
+                "px",
+                "em",
+                "rem",
+                "vh",
+                "vw",
+                "%"
+            ],
+            "spacingSizes": [
+                {
+                    "size": "0.5rem",
+                    "slug": "20",
+                    "name": "2"
+                },
+                {
+                    "size": "1rem",
+                    "slug": "30",
+                    "name": "3"
+                },
+                {
+                    "size": "1.5rem",
+                    "slug": "40",
+                    "name": "4"
+                },
+                {
+                    "size": "2rem",
+                    "slug": "50",
+                    "name": "5"
+                },
+                {
+                    "size": "3rem",
+                    "slug": "60",
+                    "name": "6"
+                },
+                {
+                    "size": "4rem",
+                    "slug": "70",
+                    "name": "7"
+                },
+                {
+                    "size": "6rem",
+                    "slug": "80",
+                    "name": "8"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--sans)",
+            "lineHeight": "1.6"
+        },
+        "color": {
+            "background": "var(--wp--preset--color--white)",
+            "text": "var(--wp--preset--color--black)"
+        },
+        "elements": {
+            "button": {
+                "border": {
+                    "radius": "12px"
+                },
+                "typography": {
+                    "fontWeight": "700",
+                    "fontSize": "0.75rem",
+                    "letterSpacing": "0.1em",
+                    "textTransform": "uppercase"
+                },
+                "color": {
+                    "background": "var(--wp--preset--color--primary)",
+                    "text": "var(--wp--preset--color--white)"
+                },
+                "spacing": {
+                    "padding": {
+                        "top": "0.75rem",
+                        "bottom": "0.75rem",
+                        "left": "1.75rem",
+                        "right": "1.75rem"
+                    }
+                }
+            },
+            "link": {
+                "typography": {
+                    "textDecoration": "none"
+                },
+                "color": {
+                    "text": "inherit"
+                },
+                ":hover": {
+                    "color": {
+                        "text": "var(--wp--preset--color--primary)"
+                    }
+                }
+            },
+            "heading": {
+                "typography": {
+                    "fontWeight": "800",
+                    "lineHeight": "1.2"
+                }
+            }
+        }
+    },
+    "templateParts": [
+        {
+            "name": "header",
+            "title": "Header",
+            "area": "header"
+        },
+        {
+            "name": "footer",
+            "title": "Footer",
+            "area": "footer"
+        }
+    ],
+    "customTemplates": [
+        {
+            "name": "blank",
+            "title": "Blank",
+            "postTypes": [
+                "page",
+                "post"
+            ]
+        }
+    ]
+}

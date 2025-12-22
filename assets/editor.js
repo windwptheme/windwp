@@ -1,0 +1,1 @@
+console.log("WindWP Editor Logic Initialized");document.addEventListener("DOMContentLoaded",()=>{document.body.classList.contains("block-editor-page")&&console.log("We are inside the Gutenberg Editor")});
